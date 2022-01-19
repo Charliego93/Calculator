@@ -13,6 +13,8 @@
 		CBCD9FF22796E22600C28DAF /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBCD9FE02796E22200C28DAF /* ContentView.swift */; };
 		CBCD9FF32796E22600C28DAF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CBCD9FE12796E22600C28DAF /* Assets.xcassets */; };
 		CBCD9FF42796E22600C28DAF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CBCD9FE12796E22600C28DAF /* Assets.xcassets */; };
+		CBCD9FFE2797FC9400C28DAF /* Extentions.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBCD9FFD2797FC9400C28DAF /* Extentions.swift */; };
+		CBCD9FFF2797FC9400C28DAF /* Extentions.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBCD9FFD2797FC9400C28DAF /* Extentions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +24,7 @@
 		CBCD9FE62796E22600C28DAF /* Calculator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Calculator.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CBCD9FEC2796E22600C28DAF /* Calculator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Calculator.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CBCD9FEE2796E22600C28DAF /* macOS.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = macOS.entitlements; sourceTree = "<group>"; };
+		CBCD9FFD2797FC9400C28DAF /* Extentions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extentions.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,6 +60,7 @@
 				CBCD9FDF2796E22200C28DAF /* CalculatorApp.swift */,
 				CBCD9FE02796E22200C28DAF /* ContentView.swift */,
 				CBCD9FE12796E22600C28DAF /* Assets.xcassets */,
+				CBCD9FFD2797FC9400C28DAF /* Extentions.swift */,
 			);
 			path = Shared;
 			sourceTree = "<group>";
@@ -178,6 +182,7 @@
 			files = (
 				CBCD9FF12796E22600C28DAF /* ContentView.swift in Sources */,
 				CBCD9FEF2796E22600C28DAF /* CalculatorApp.swift in Sources */,
+				CBCD9FFE2797FC9400C28DAF /* Extentions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -187,6 +192,7 @@
 			files = (
 				CBCD9FF22796E22600C28DAF /* ContentView.swift in Sources */,
 				CBCD9FF02796E22600C28DAF /* CalculatorApp.swift in Sources */,
+				CBCD9FFF2797FC9400C28DAF /* Extentions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

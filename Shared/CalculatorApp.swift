@@ -13,5 +13,6 @@ struct CalculatorApp: App {
         WindowGroup {
             ContentView()
         }
+        .windowStyle(.hiddenTitleBar)
     }
 }
