@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CB074A9F2798FCDA001E1369 /* Panel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB074A9E2798FCDA001E1369 /* Panel.swift */; };
+		CB074AA02798FCDA001E1369 /* Panel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB074A9E2798FCDA001E1369 /* Panel.swift */; };
+		CB074AA22798FDF4001E1369 /* Blur.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB074AA12798FDF4001E1369 /* Blur.swift */; };
+		CB074AA32798FDF4001E1369 /* Blur.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB074AA12798FDF4001E1369 /* Blur.swift */; };
+		CB074AA52799040A001E1369 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB074AA42799040A001E1369 /* AppDelegate.swift */; };
+		CB074AA62799040A001E1369 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB074AA42799040A001E1369 /* AppDelegate.swift */; };
 		CBCD9FEF2796E22600C28DAF /* CalculatorApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBCD9FDF2796E22200C28DAF /* CalculatorApp.swift */; };
 		CBCD9FF02796E22600C28DAF /* CalculatorApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBCD9FDF2796E22200C28DAF /* CalculatorApp.swift */; };
 		CBCD9FF12796E22600C28DAF /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBCD9FE02796E22200C28DAF /* ContentView.swift */; };
@@ -18,6 +24,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		CB074A9E2798FCDA001E1369 /* Panel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Panel.swift; sourceTree = "<group>"; };
+		CB074AA12798FDF4001E1369 /* Blur.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Blur.swift; sourceTree = "<group>"; };
+		CB074AA42799040A001E1369 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CBCD9FDF2796E22200C28DAF /* CalculatorApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculatorApp.swift; sourceTree = "<group>"; };
 		CBCD9FE02796E22200C28DAF /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		CBCD9FE12796E22600C28DAF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -58,9 +67,12 @@
 			isa = PBXGroup;
 			children = (
 				CBCD9FDF2796E22200C28DAF /* CalculatorApp.swift */,
+				CB074AA42799040A001E1369 /* AppDelegate.swift */,
 				CBCD9FE02796E22200C28DAF /* ContentView.swift */,
 				CBCD9FE12796E22600C28DAF /* Assets.xcassets */,
 				CBCD9FFD2797FC9400C28DAF /* Extentions.swift */,
+				CB074A9E2798FCDA001E1369 /* Panel.swift */,
+				CB074AA12798FDF4001E1369 /* Blur.swift */,
 			);
 			path = Shared;
 			sourceTree = "<group>";
@@ -180,8 +192,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CB074AA52799040A001E1369 /* AppDelegate.swift in Sources */,
 				CBCD9FF12796E22600C28DAF /* ContentView.swift in Sources */,
 				CBCD9FEF2796E22600C28DAF /* CalculatorApp.swift in Sources */,
+				CB074AA22798FDF4001E1369 /* Blur.swift in Sources */,
+				CB074A9F2798FCDA001E1369 /* Panel.swift in Sources */,
 				CBCD9FFE2797FC9400C28DAF /* Extentions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -190,8 +205,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CB074AA62799040A001E1369 /* AppDelegate.swift in Sources */,
 				CBCD9FF22796E22600C28DAF /* ContentView.swift in Sources */,
 				CBCD9FF02796E22600C28DAF /* CalculatorApp.swift in Sources */,
+				CB074AA32798FDF4001E1369 /* Blur.swift in Sources */,
+				CB074AA02798FCDA001E1369 /* Panel.swift in Sources */,
 				CBCD9FFF2797FC9400C28DAF /* Extentions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -333,7 +351,7 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = io.github.charlie.Calculator;
 				PRODUCT_NAME = Calculator;
-				SDKROOT = iphoneos;
+				SDKROOT = macosx;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -363,7 +381,7 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = io.github.charlie.Calculator;
 				PRODUCT_NAME = Calculator;
-				SDKROOT = iphoneos;
+				SDKROOT = macosx;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";

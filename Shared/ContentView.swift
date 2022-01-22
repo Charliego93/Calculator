@@ -47,11 +47,14 @@ struct ContentView: View {
             HStack(spacing: 0) {
                Text("VStack")
                     .font(.system(size: 20))
-                    .foregroundColor(.white)
+//                    .foregroundColor(.white)
                     .padding(0)
+//                    .background(.blue)
             }
-            .frame(width: .infinity, height: 100, alignment: .bottom)
-            .background(Color("Panel"))
+            .frame(maxWidth: .infinity, minHeight: 100, alignment: .bottom)
+//            .background(Color("Panel"))
+//            .background(.ultraThickMaterial)
+            .visualEffect(material: .contentBackground)
             
             ForEach(btns.indices, id: \.self) { i in
                 let hbtns = btns[i]
@@ -59,34 +62,29 @@ struct ContentView: View {
                 HStack(spacing: 0) {
                     ForEach(hbtns.indices, id: \.self) { j in
                         let icount = btns.count
-                        let jcount = hbtns.count
-                        let edges: [Edge] = []
                         
-                        let btn = Button(action: {
+                        Button(action: {
                             print(hbtns[j].txt)
                         }, label: {
                             Text(hbtns[j].txt)
                                 .font(.system(size: hbtns[j].size))
                                 .fontWeight(.medium)
                                 .padding(.bottom, 7)
-                                .frame(width: 80, height: 80, alignment: .center)
+                                .frame(width: 70, height: 70, alignment: .center)
                                 .background(hbtns[j].color)
                         })
                         .buttonStyle(PlainButtonStyle())
-                        
-                        if icount > 0 {
-                            edges.append(.top)
+                        .if(j > 0) { content in
+                            content.border(width: 2, edges: [.leading], color: Color("Splite"))
                         }
-                        if jcount > 0 {
-                            edges.append(.leading)
+                        .if(icount - 1 > i) { content in
+                            content.border(width: 2, edges: [.bottom], color: Color("Splite"))
                         }
-                        
-                        btn.border(width: 2, edges: edges, color: Color("Splite"))
                     }
                 }
                 .padding(0.0)
             }
-        }
+        }.background(.ultraThinMaterial)
     }
 }
 
